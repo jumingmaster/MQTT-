@@ -1,0 +1,151 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¶ÃVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Tseng Chienheng, Personal, LIC=X1E4T-RAU9N-9ZVWW-QEN2S-TB5KJ-8SE67
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.28.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.36.0
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+C:\Users\zengj\Desktop\MQTT÷«ƒ‹√≈Ω˚œµÕ≥\stm32\MqttIntelligentGuard.uvprojx
+Project File Date:  09/01/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling led.c...
+compiling Communication.c...
+CODE\Esp8266\Communication.c(15): warning:  #940-D: missing return statement at end of non-void function "_sys_exit" 
+  } 
+CODE\Esp8266\Communication.c(109): warning:  #177-D: variable "tmp"  was declared but never referenced
+      char tmp[256];
+CODE\Esp8266\Communication.c(26): warning:  #550-D: variable "USART_RX_BUF"  was set but never used
+  static u8 USART_RX_BUF[PACKET_MAX_SIZE];    
+CODE\Esp8266\Communication.c: 3 warnings, 0 errors
+compiling main.c...
+CODE\data.h(22): warning:  #815-D: type qualifier on return type is meaningless
+  const int Find_With_FP_ID(const person_info_t * head, int FP_ID);
+CODE\main.c(176): warning:  #870-D: invalid multibyte character sequence
+                      printf("mqtt_debug\r\nËØ∑ËæìÂÖ•ÂØÜÁ†?:");
+CODE\main.c(231): warning:  #1293-D: assignment in condition
+                          if((reval = MFRC522Read()))   //Âç°Ê≠£Á°?
+CODE\main.c(135): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "pos"  (declared at line 182)
+              switch(sel)
+              ^
+CODE\main.c(271): warning:  #111-D: statement is unreachable
+      delay_s(1);
+CODE\main.c(378): warning:  #550-D: variable "card_size"  was set but never used
+  	u8 i,status,card_size;
+CODE\main.c(466): warning:  #870-D: invalid multibyte character sequence
+          printf("mqtt_debugÊ≥¢ÁâπÁé?%d   Âú∞ÂùÄ%x\n:",57600, AS608Addr);
+CODE\main.c(480): warning:  #870-D: invalid multibyte character sequence
+              printf("mqtt_debug\r\nÂ∫ìÂÆπÈá?   %dÂØπÊØîÁ≠âÁ∫ß%d\n:",AS608Para.PS_max-ValidN,AS608Para.PS_level);
+CODE\main.c: 8 warnings, 0 errors
+compiling timer.c...
+compiling keyboard.c...
+CODE\Hardware\keyboard.c(267): warning:  #940-D: missing return statement at end of non-void function "Get_Num" 
+  }
+CODE\Hardware\keyboard.c: 1 warning, 0 errors
+compiling Test.c...
+.\CODE\data.h(22): warning:  #815-D: type qualifier on return type is meaningless
+  const int Find_With_FP_ID(const person_info_t * head, int FP_ID);
+CODE\ÊµãËØïÂçïÂÖÉ\Test.c(253): warning:  #870-D: invalid multibyte character sequence
+             printf("mqtt_debugÂºÄÈó?:\n");
+CODE\≤‚ ‘µ•‘™\Test.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=15534 RO-data=2642 RW-data=2040 ZI-data=3920  
+".\Objects\MqttIntelligentGuard.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.1.0.8.pack
+                Keil.STM32F4xx_DFP.1.0.8
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.3.1
+   * Component: EXTI Version: 1.3.0
+   * Component: Framework Version: 1.3.1
+   * Component: GPIO Version: 1.3.0
+   * Component: PWR Version: 1.3.0
+   * Component: RCC Version: 1.3.0
+   * Component: SYSCFG Version: 1.3.0
+   * Component: TIM Version: 1.3.0
+   * Component: USART Version: 1.3.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F407ZE
+  .\RTE\_Target_1
+  C:\Users\zengj\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\zengj\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\1.0.8\Device\Include
+  C:\Users\zengj\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\1.0.8\Device\StdPeriph_Driver\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil::Device:Startup:1.3.1
+      Include file:  Device\Include\stm32f4xx.h
+      Source file:   Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\ARM\startup_stm32f40_41xxx.s
+      Source file:   Device\Source\system_stm32f4xx.c
+      Source file:   Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+
+   * Component: Keil::Device:StdPeriph Drivers:EXTI:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_exti.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_exti.c
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:1.3.1
+      Source file:   Device\StdPeriph_Driver\src\misc.c
+      Source file:   Device\StdPeriph_Driver\templates\stm32f4xx_conf.h
+      Include file:  Device\StdPeriph_Driver\templates\stm32f4xx_it.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f4xx_it.c
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:1.3.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_gpio.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_gpio.h
+
+   * Component: Keil::Device:StdPeriph Drivers:PWR:1.3.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_pwr.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_pwr.h
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_rcc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_rcc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:SYSCFG:1.3.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_syscfg.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_syscfg.h
+
+   * Component: Keil::Device:StdPeriph Drivers:TIM:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_tim.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_tim.c
+
+   * Component: Keil::Device:StdPeriph Drivers:USART:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_usart.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_usart.c
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
